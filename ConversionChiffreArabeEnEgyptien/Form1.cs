@@ -22,19 +22,19 @@ namespace ConversionChiffreArabeEnEgyptien
             int nombre = Convert.ToInt32(tbNombre.Text);
             //int nombre = 1234567;
             string r = "";
-            int nb1, nb10, nb100, nb1000, nb10000, nb100000, nb1000000;
-
+            //int nb1, nb10, nb100, nb1000, nb10000, nb100000, nb1000000;
+            int resulat;
             //Opération de recuperation des nombres
-            
 
-            for (int i = 1000000, j = 1000000; i >= 1; i = i / 10, j = j /10)
+
+            for (int i = 1000000; i >= 1; i = i / 10)
             {
-                nb1000000 = nombre / i;
-                nombre = nombre % j;
-                nb100000 = (nombre % 100000) / 100000;
+                resulat = nombre / i;
+                nombre = nombre % i;
 
 
-                r = r + "Il y 'a " + nb1000000 + " hommes \r\n";
+
+                r = r + "Il y 'a " + resulat + " hommes \r\n";
             }
 
 
