@@ -15,15 +15,17 @@ namespace ConversionChiffreArabeEnEgyptien
         {
             InitializeComponent();
         }
-
+        private Bitmap MyImage;
         private void btnValider_Click(object sender, EventArgs e)
         {
             //Déclaration des variables
             int nombre = Convert.ToInt32(tbNombre.Text);
             //int nombre = 1234567;
             string r = "";
-            //int nb1, nb10, nb100, nb1000, nb10000, nb100000, nb1000000;
             int resulat;
+
+            //----------------------------
+            
             //Opération de recuperation des nombres
 
 
@@ -32,6 +34,10 @@ namespace ConversionChiffreArabeEnEgyptien
                 resulat = nombre / i;
                 nombre = nombre % i;
 
+                //Afficahge des images
+                //Image newImage = Image.FromFile(image1.png); 
+                //MyImage = new Bitmap('C:\Users\Faize\Desktop\ConversionChiffreArabeEnEgyptien');
+                //pbResultat.Image = 
 
 
                 r = r + "Il y 'a " + resulat + " hommes \r\n";
@@ -43,5 +49,7 @@ namespace ConversionChiffreArabeEnEgyptien
             //r = "Il y 'a " + nb1000000 + " hommes \r\n" + nb100000 + "crapeau";
             tbResultat.Text = r; 
         }
+
+        
     }
 }

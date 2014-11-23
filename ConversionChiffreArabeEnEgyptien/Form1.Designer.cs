@@ -33,14 +33,12 @@
             this.btnValider = new System.Windows.Forms.Button();
             this.Resultat = new System.Windows.Forms.Label();
             this.tbResultat = new System.Windows.Forms.TextBox();
-            this.pbResultat = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pbResultat)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(24, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 0;
@@ -48,16 +46,18 @@
             // 
             // tbNombre
             // 
-            this.tbNombre.Location = new System.Drawing.Point(62, 6);
+            this.tbNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNombre.Location = new System.Drawing.Point(25, 41);
             this.tbNombre.Name = "tbNombre";
-            this.tbNombre.Size = new System.Drawing.Size(226, 20);
+            this.tbNombre.Size = new System.Drawing.Size(226, 53);
             this.tbNombre.TabIndex = 1;
             // 
             // btnValider
             // 
-            this.btnValider.Location = new System.Drawing.Point(338, 12);
+            this.btnValider.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnValider.Location = new System.Drawing.Point(65, 261);
             this.btnValider.Name = "btnValider";
-            this.btnValider.Size = new System.Drawing.Size(75, 23);
+            this.btnValider.Size = new System.Drawing.Size(129, 32);
             this.btnValider.TabIndex = 2;
             this.btnValider.Text = "Valider";
             this.btnValider.UseVisualStyleBackColor = true;
@@ -66,7 +66,7 @@
             // Resultat
             // 
             this.Resultat.AutoSize = true;
-            this.Resultat.Location = new System.Drawing.Point(12, 63);
+            this.Resultat.Location = new System.Drawing.Point(24, 106);
             this.Resultat.Name = "Resultat";
             this.Resultat.Size = new System.Drawing.Size(46, 13);
             this.Resultat.TabIndex = 3;
@@ -74,26 +74,18 @@
             // 
             // tbResultat
             // 
-            this.tbResultat.Location = new System.Drawing.Point(62, 42);
+            this.tbResultat.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbResultat.Location = new System.Drawing.Point(25, 122);
             this.tbResultat.Multiline = true;
             this.tbResultat.Name = "tbResultat";
-            this.tbResultat.Size = new System.Drawing.Size(219, 153);
+            this.tbResultat.Size = new System.Drawing.Size(226, 133);
             this.tbResultat.TabIndex = 4;
-            // 
-            // pbResultat
-            // 
-            this.pbResultat.Location = new System.Drawing.Point(35, 250);
-            this.pbResultat.Name = "pbResultat";
-            this.pbResultat.Size = new System.Drawing.Size(585, 168);
-            this.pbResultat.TabIndex = 5;
-            this.pbResultat.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(965, 430);
-            this.Controls.Add(this.pbResultat);
+            this.ClientSize = new System.Drawing.Size(264, 309);
             this.Controls.Add(this.tbResultat);
             this.Controls.Add(this.Resultat);
             this.Controls.Add(this.btnValider);
@@ -101,7 +93,6 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pbResultat)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -114,7 +105,6 @@
         private System.Windows.Forms.Button btnValider;
         private System.Windows.Forms.Label Resultat;
         private System.Windows.Forms.TextBox tbResultat;
-        private System.Windows.Forms.PictureBox pbResultat;
     }
 }
 
