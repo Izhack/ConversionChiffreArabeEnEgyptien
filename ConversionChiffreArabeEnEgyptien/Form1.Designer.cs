@@ -32,7 +32,7 @@
             this.tbNombre = new System.Windows.Forms.TextBox();
             this.btnValider = new System.Windows.Forms.Button();
             this.Resultat = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbResultat = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -53,7 +53,7 @@
             // 
             // btnValider
             // 
-            this.btnValider.Location = new System.Drawing.Point(253, 282);
+            this.btnValider.Location = new System.Drawing.Point(388, 33);
             this.btnValider.Name = "btnValider";
             this.btnValider.Size = new System.Drawing.Size(75, 23);
             this.btnValider.TabIndex = 2;
@@ -70,20 +70,20 @@
             this.Resultat.TabIndex = 3;
             this.Resultat.Text = "Resultat";
             // 
-            // textBox1
+            // tbResultat
             // 
-            this.textBox1.Location = new System.Drawing.Point(102, 105);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(230, 85);
-            this.textBox1.TabIndex = 4;
+            this.tbResultat.Location = new System.Drawing.Point(102, 105);
+            this.tbResultat.Multiline = true;
+            this.tbResultat.Name = "tbResultat";
+            this.tbResultat.Size = new System.Drawing.Size(230, 250);
+            this.tbResultat.TabIndex = 4;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(614, 367);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbResultat);
             this.Controls.Add(this.Resultat);
             this.Controls.Add(this.btnValider);
             this.Controls.Add(this.tbNombre);
@@ -101,7 +101,7 @@
         private System.Windows.Forms.TextBox tbNombre;
         private System.Windows.Forms.Button btnValider;
         private System.Windows.Forms.Label Resultat;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbResultat;
     }
 }
 
