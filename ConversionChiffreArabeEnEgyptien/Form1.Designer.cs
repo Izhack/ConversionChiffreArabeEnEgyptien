@@ -51,11 +51,12 @@
             this.tbNombre.Name = "tbNombre";
             this.tbNombre.Size = new System.Drawing.Size(226, 53);
             this.tbNombre.TabIndex = 1;
+            this.tbNombre.TextChanged += new System.EventHandler(this.tbNombre_TextChanged);
             // 
             // btnValider
             // 
             this.btnValider.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnValider.Location = new System.Drawing.Point(65, 261);
+            this.btnValider.Location = new System.Drawing.Point(64, 317);
             this.btnValider.Name = "btnValider";
             this.btnValider.Size = new System.Drawing.Size(129, 32);
             this.btnValider.TabIndex = 2;
@@ -78,14 +79,15 @@
             this.tbResultat.Location = new System.Drawing.Point(25, 122);
             this.tbResultat.Multiline = true;
             this.tbResultat.Name = "tbResultat";
-            this.tbResultat.Size = new System.Drawing.Size(226, 133);
+            this.tbResultat.Size = new System.Drawing.Size(226, 189);
             this.tbResultat.TabIndex = 4;
             // 
             // Form1
             // 
+            this.AcceptButton = this.btnValider;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(264, 309);
+            this.ClientSize = new System.Drawing.Size(264, 361);
             this.Controls.Add(this.tbResultat);
             this.Controls.Add(this.Resultat);
             this.Controls.Add(this.btnValider);
