@@ -62,9 +62,9 @@ namespace ConversionChiffreArabeEnEgyptien
                             break;
                         case 100000: images = "Grenouille(s)";
                             break;
-                        case 10000: images = "Doight(s)";
+                        case 10000: images = "Doigt(s)";
                             break;
-                        case 1000: images = "Fleure(s)";
+                        case 1000: images = "Fleur(s)";
                             break;
                         case 100: images = "Spirale(s)";
                             break;
@@ -73,7 +73,7 @@ namespace ConversionChiffreArabeEnEgyptien
                         case 1: images = "Barre(s)";
                             break;
                     }
-                     r = r + "Il y 'a " + resulat + " " + images + " \r\n";
+                     r = r + "Il y a " + resulat + " " + images + " \r\n";
                 }
                 tbResultat.Text = r;
             }
